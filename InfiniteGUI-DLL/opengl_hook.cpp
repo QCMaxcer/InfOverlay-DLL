@@ -141,10 +141,10 @@ static LRESULT CALLBACK wndproc_hook(HWND hWnd, UINT message, WPARAM wParam, LPA
 			switch (message)
 			{
 			case WM_SETCURSOR:
-				if (LOWORD(lParam) == HTCLIENT)
-				{
-					SetCursor(LoadCursor(nullptr, IDC_ARROW));
-				}
+				//if (LOWORD(lParam) == HTCLIENT)
+				//{
+				//	SetCursor(LoadCursor(nullptr, IDC_ARROW));
+				//}
 			case WM_SYSDEADCHAR:
 			case WM_KEYDOWN:
 			case WM_KEYUP:
